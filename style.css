@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Manrope:wght@700&family=PT+Serif:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "PT Serif", sans-serif;
+}
+
+h3 {
+  font-family: "Manrope", serif;
+}
+
+p {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+body {
+  background-color: #efd2cb;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  border-radius: 30px;
+}
+
+.login-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  color: #c8b8d6;
+}
+
+.login-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.kjain-center {
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-family: "Manrope", serif;
+  text-transform: uppercase;
+}
+
+.kjain-center:hover {
+  color: #e8b4bc;
+}
+
+.login-boxlog {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.login-log {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f8f8;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.login-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-title h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.login-title__span {
+  font-weight: 700;
+  color: #c8b8d6;
+  text-transform: uppercase;
+}
+
+.login-title__span:hover {
+  color: #e8b4bc;
+}
+
+.login-subtitle {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.kjain-text {
+  font-weight: 700;
+  color: #736ced;
+  font-family: "PT Serif", sans-serif;
+}
+
+.kjain-link {
+  text-decoration: none;
+}
+
+.login-form {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.login-form__input {
+  border: none;
+  background-color: #efe9f4;
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+}
+
+input {
+  font-size: 20px;
+  padding-left: 12px;
+}
+
+.login-check {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-checkbox {
+  display: flex;
+}
+
+.login-checkbox__check {
+  width: 20px;
+  height: 36px;
+}
+
+.login-checkbox__text {
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+.login-checklink {
+  margin-top: 0;
+}
+
+.login-link {
+  font-size: 22px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-decoration: none;
+}
+
+.login-btn {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-left: -10px;
+  align-items: left;
+  justify-content: left;
+  width: 160px;
+}
+
+.login-btn1 {
+  background-image: linear-gradient(
+    to right,
+    #dae2f8 0%,
+    #d6a4a4 51%,
+    #dae2f8 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  position: left;
+}
+
+.login-btn1:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e8b4bc;
+}
+
+.login-checkbox__text:hover {
+  color: #e8b4bc;
+}
+
+@media (max-width: 1024px) {
+  .login-log {
+    overflow-y: auto;
+  }
+
+  .login-form__input {
+    width: 95%;
+  }
+
+  .login-check {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .login-btn {
+    justify-content: center;
+    margin-left: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-img {
+    display: none;
+  }
+
+  .login-check {
+    display: flex;
+    justify-content: none;
+    margin: 0 86px;
+  }
+
+  .login-btn {
+    margin-left: 160px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .login-log {
+    padding: 0 10px;
+  }
+
+  .login-check {
+    margin: 0;
+  }
+
+  .login-btn {
+    margin-left: 75px;
+  }
+}
