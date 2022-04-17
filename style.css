@@ -248,6 +248,10 @@ a:hover {
     margin-left: 160px;
     justify-content: center;
   }
+
+  .login-log {
+    border-radius: 20px;
+  }
 }
 
 @media (max-width: 375px) {
